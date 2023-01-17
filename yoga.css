@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:wght@700&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans:wght@100&family=Nunito:wght@700&family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Noto+Sans:wght@100;300&family=Nunito:wght@700&family=Poppins:wght@100&family=Roboto:wght@100;400&display=swap');
+
+:root{
+    --brand:#7F5C86;
+    --thin:'Noto Sans', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar start here */
+#navBar{
+    width: 100%;
+    height: 15vh;
+    /* position: sticky; */
+    top: 1px;
+    z-index: 10;
+    background-color:#FFFFFF;
+       /* margin-top: 1px; */
+}
+#navBar>.nav_start{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ /* z-index: 10; */
+    box-shadow: 1px 1px 10px;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+#navBar>.nav_start>.logoBlock{
+    flex-basis: 50%;
+    margin-left: 60px;
+
+    
+}
+#navBar>.nav_start>.logoBlock>i{
+    color: var(--brand);
+   font-size: 60px;
+   padding: 10px;
+}
+#navBar span{
+    font-size: 25px;
+    color: var(--brand);
+}
+#navBar>.nav_start>.menuBlock{
+    flex-basis: 50%;
+    margin-right: 60px;
+}
+#navBar .menuBlock>ul{
+    display: flex;
+    justify-content:space-between
+}
+.menuBlock>ul>li{
+    list-style: none;
+}
+.menuBlock>ul>li>a{
+    text-decoration: none;
+    color:var(--brand) ;
+    text-transform: capitalize;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 20px;
+     font-weight: bold;
+}
+
+/* nav bar end here */
+
+.circlePart{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+#circlePart>article>img{
+  /* width: 500px; */
+  margin-top: 100px;
+  height: 110vh;
+  width: 100%;
+  position: relative;
+  top: -20px;
+  z-index: -1;
+}
+#circlePart article .c_part{
+  /* width: 500px; */
+  position: absolute;
+  z-index: -1;
+  width: 400px;
+  position: absolute;
+     left: 552px;
+    top: 350px;
+  text-align: center;
+  /* visibility: hidden; */
+}
+#circlePart:hover .c_part{
+visibility: visible;
+transform: scale(1.05);
+}
+  /* animation-name: yoga;
+  animation-duration: 2s;
+    animation-delay: 2s; */
+/* }
+@keyframes yoga {
+    0%{
+        transition: linear(20,30);
+    }
+     100%{
+        transition: linear();
+    }
+}
+   */
+
+#circlePart article .c_part h3{
+    color: var(--brand);
+    font-size: 35px;
+   font-family: 'Times New Roman', Times, serif;
+}
+#circlePart article .c_part h1{
+    color: var(--brand);
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Alfa Slab One', cursive;
+    letter-spacing: 2px;
+}
+#circlePart article .c_part p{
+   color: var(--brand);
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+/* half circle part start */
+#halfCircle>article{
+    width: 90%;
+    height: 90vh;
+    background-color:#EAF2F4;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+    bottom:500px;
+    z-index: -3;
+}
+#halfCircle>article>.content{
+    position: absolute; 
+    bottom: 90px;
+    left: 450px;
+    text-align: center;
+    color: var(--brand);
+
+}
+#halfCircle article .content h2{
+        width: 500px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 500;
+        position: absolute;
+        top: 1px;
+}
+#halfCircle article .content h1{
+    width: 500px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 30px;
+}
+
+/* half circle end  */
+
+/* image 1part start` */
+.img{
+    position: relative;
+}
+
+.image .image-part{
+    width: 80%;
+    margin-left: 13%;
+    display: flex;
+    position: absolute;
+    top: 680px;
+    justify-content: space-around;
+}
+.image .image-part img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+.image .image-part .img11{
+    /* transition: all 0.3sec rotate; */
+    animation: rotate 3s linear ;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+ .image div{
+    width: 6px;
+    height: 6px;
+    background-color: var(--brand);
+    margin-top: 2px;
+    border-radius: 50%;
+    position:relative;
+    top: -30px;
+    /* margin-left: 10px; */
+ }
+
+.image .image-part h1{
+     width: 250px;
+     color: var(--brand);
+     text-transform: capitalize;
+     font-size: 25px;
+     margin-left: 20px;
+}
+.image .image-part p{
+    width: 250px;
+    /* margin-top: 10px; */
+    color: var(--brand);
+    font-size: 18;
+      margin-left: 20px;
+    text-align: justify;
+      border-bottom: 3px solid var(--brand);
+      padding-top: 10px;
+      padding-bottom: 10px;
+}
+.image .image-part .day{
+    margin-left: 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.image .image-part .time{
+      margin-left: 20px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+  .classButton{
+    position: absolute;
+    top: 220vh;
+    left: 670px;
+    /* padding: 10px; */
+    padding: 10px 50px 10px 50px;
+    border-radius: 100px;
+    background-color: #7F5984;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: -1;
+  }
+
+
+  /* offer start here */
+  #offer{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    height:760px ;
+    width: 100%;
+    background-image: url(./image/yoga5.png);
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+
+  }
+  #offer .offerContent{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid;
+    left: 377px;
+    top: 22px;
+    outline: 0 solid rgba(0, 0, 0, 0.349);
+    outline-offset: 10px;
+    z-index: 1;
+     outline: 1px solid rgba(0, 0, 0, 0.237);
+    outline-offset: 20px;
+  
+  }
+   #offer .offerContent .circleOut{
+       width: 300px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.176);
+    position: absolute;
+    bottom: -51px;
+    left: -53px;
+    border-radius: 50%;
+   }
+  #offer .offerContent .offerList{
+      position: absolute;
+    top: 55px;
+    left: 50px;
+  }
+   #offer .offerContent .offerList h2{
+    color: var(--brand);
+    font-size: 50px;
+   }
+   #offer .offerContent .offerList p{
+    color: var(--brand);
+    font-size: 30px;
+    letter-spacing: 2px;
+   }
+   #offer article .summerClass{
+   width: 800px;
+    height: 250px;
+    background-color:#7f5c8695;
+    position: absolute;
+    top: 300px;
+    border-radius: 100px;
+
+   }
+     #offer article .summerClass h1{
+        position: absolute;
+        top: 10px;
+        text-align: center;
+        width:800px ;
+        font-size: 45px;
+        color: #FFFFFF;
+        text-transform: capitalize;
+     }
+     #offer article .summerClass p{
+        position: absolute;
+        top: 70px;
+        text-align: center;
+        width:600px ;
+      font-size: 20px;
+      color: #EAF2F4;
+      margin-left: 100px;
+      
+     }
+   .summerClass>h1{
+    font-size: 25px;
+   }
+   /* offer end here */
+
+   /* healthy section start here */
+
+  #healthy{
+    width: 95%;
+    height: auto;
+    margin:0 auto;
+    margin-bottom: 50px;
+
+  }
+  #healthy h1{
+  
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--brand);
+      font-family:'Times New Roman', Times, serif;
+      font-size: 25px;
+}
+  #healthy h1::after{
+      background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    /* position: relative; */
+    vertical-align: middle;
+    width: 30%;
+    margin-left: 10px;
+  }
+  #healthy h1::before{
+      background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    /* position: relative; */
+    vertical-align: middle;
+    width: 30%;
+    margin-right: 10px;
+  }
+  #healthy h2{
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--brand);
+      /* font-family: 'Times New Roman', Times, serif; */
+      font-weight:50px;
+      
+font-family:  'Noto Sans', sans-serif;
+      font-size: 25px;
+    margin-bottom: 50px;
+}
+#healthy .healthImage {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+#healthy .healthImage figure h2{
+    color: var(--brand);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+#healthy .healthImage figure p{
+    color: var(--brand);
+    width: 250px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+/* healthy part end here */
+
+/* summer class start here */
+#summer{
+    width:85%;
+    height: auto;
+    /* background-color: #cce4e1; */
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+#summer h2{
+text-align: center;
+font-family: var(--thin);
+color: var(--brand);
+font-size: 23px;
+text-transform: uppercase;
+}
+#summer h1{
+text-align: center;
+font-family: 'Times New Roman', Times, serif;
+color: var(--brand);
+font-size: 25px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.summerImage{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* position: relative; */
+}
+.summerImage figure img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.summerImage .s_dots div{
+    width: 8px;
+    height: 8px;
+    background-color:var(--brand);
+     margin-top: 5px;
+     position: relative;
+     bottom: 30px;
+     border-radius: 50%;
+     
+}
+.summerImage figure h2{
+    width: 200px;
+    text-align: left;  
+    position:relative;
+    right: 40px; 
+    font-weight: bolder;
+    font-family: 'Alfa Slab One', cursive;
+     color: var(--brand);
+}
+.summerImage figure p{
+    width: 200px;
+    text-align:justify;
+    margin-left: 22px;
+    color: var(--brand);
+    border-bottom: 3px solid var(--brand);
+}
+.summerImage figure .s-day{
+    width: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 10px;
+padding: 10px;
+font-size: 15px;
+display: inline-block;
+}
+.summerImage figure .s-time{
+    width: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+    margin-left: 40px;
+padding: 10px;
+font-size: 15px;
+display: inline-block;
+}
+#summer a button{
+    position: absolute;
+    left: 665px;
+    padding: 5px 30px 5px 30px ;
+   font-size: 25px;
+   background-color: #7F5984; 
+   color: white;
+   font-weight: bold;
+   border-style: none;
+   border-radius: 30px;
+   margin-top: 50px;
+   z-index: -1;
+   
+
+}
+
+/* smart class section end */
+
+/* workshop start here */
+#workshop{
+    width: 80%;
+    height: 90vh;
+    /* background-color: aqua; */
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+#workshop h1{
+position: absolute;
+font-size: 14px;
+color: var(--brand);
+/* margin-top: 5px; */
+letter-spacing: 25px;
+}
+
+#workshop h2{
+position: absolute;
+font-size: 20px;
+font-family: var(--thin);
+text-transform: uppercase;
+letter-spacing: 2px;
+left: 70px;
+color: var(--brand);
+
+}
+#workshop h3{
+position: absolute;
+font-size: 13px;
+left: 70px;
+font-family: 'Times New Roman', Times, serif;
+color: var(--brand);
+font-size: 25px;
+top: 30px;
+text-transform: uppercase;
+}
+
+#workshop h4{
+position: absolute;
+font-size: 15px;
+font-family: var(--thin);
+color: var(--brand);
+text-transform: uppercase;
+left: 70px;
+top: 80px;
+font-weight: bold;
+}
+#workshop h5{
+position: absolute;
+font-size: 15px;
+font-family: var(--thin);
+color: var(--brand);
+text-transform: uppercase;
+left: 70px;
+top: 100px;
+font-weight: bold;
+}
+#workshop span{
+position: absolute;
+font-size: 15px;
+font-family: var(--thin);
+color: var(--brand);
+top:130px;
+left: 70px;
+}
+#workshop p{
+position: absolute;
+font-size: 15px;
+font-family: var(--thin);
+color: var(--brand);
+top:150px;
+left: 70px;
+}
+#workshop figure img{
+    width: 500px;
+    height: 500px;
+    border-radius: 40%;
+    position: absolute;
+    right: 100px;
+    top: -10px;
+}
+#workshop aside h1{
+    position: absolute;
+    right: 5px;
+    top: 300px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    writing-mode: vertical-rl;
+    text-orientation:upright ;
+}
+
+/* workshop end here */
+
+/* footer start here */
+#footer article{
+    background-image: url(./image/dg.png);
+    height:80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+#footer article p{
+    font-size: 25px;
+    color: var(--brand);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    width: 500px;
+    position: absolute;
+    top: 250px;
+    left: 550px;
+}
+#footer article .about h3{
+    position: absolute;
+    color: var(--brand);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+        text-transform: uppercase;
+        left: 300px;
+        top: 400px;
+        font-size: 30px;
+}
+#footer article .about p{
+    position: absolute;
+    width: 350px;
+    top: 450px;
+    left: 297px;
+    font-size: 15px;
+    text-align: justify;
+    font-family: var(--thin);
+}
+#footer i{
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    font-size: 50px;
+    color: var(--brand);
+}
+#footer .about span{
+    position: absolute;
+    top: 620px;
+    left:380px;
+}
+#footer h2{
+    position: absolute;
+    right: 200px;
+    /* top: 500px; */
+    top: 500px;
+    text-transform: capitalize;
+    color: var(--brand);
+}
+#footer h4{
+    position: absolute;
+    right: 225px;
+    top: 560px;
+    color: var(--brand);
+}
